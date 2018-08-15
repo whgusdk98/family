@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FaMILY1</string>
+
+    <string name="joinFam">join FaMILY</string>
+    <string name="succeed">회원가입을 축하합니다!</string>
+    <string name="hello">hello</string>
+    <string name="check1">산부인과전문의</string>
+    <string name="question">궁금한 것을 물어봐주세요!</string>
+    <string name="check2">모유수유협회</string>
+    <string name="check3">소아과</string>
+    <string name="check4">피부과</string>
+    <string name="ok">확인</string>
+    <string name="todo">TODO</string>
+
+</resources>

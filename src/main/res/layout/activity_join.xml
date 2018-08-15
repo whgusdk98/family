@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/radioButton2"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="70dp"
+        android:text="아빠"
+        app:layout_constraintBottom_toTopOf="@+id/newidText"
+        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="70dp"
+        android:text="엄마"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/babyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="83dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="태명을 입력해주세요."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findmomButton" />
+
+    <EditText
+        android:id="@+id/newidText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/newpasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="72dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="PW"
+        android:inputType="textPersonName|textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newidText" />
+
+    <Button
+        android:id="@+id/findmomButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/babyText"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="37dp"
+        android:text="엄마찾기"
+        app:layout_constraintBottom_toTopOf="@+id/babyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newpasswordText" />
+
+    <Button
+        android:id="@+id/finddadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/babyText"
+        android:layout_alignTop="@+id/findmomButton"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="37dp"
+        android:text="아빠찾기"
+        app:layout_constraintBottom_toTopOf="@+id/babyText"
+        app:layout_constraintEnd_toStartOf="@+id/findmomButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newpasswordText" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="15dp"
+        android:onClick="joinClick"
+        android:text="@string/joinFam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/babyText" />
+
+</android.support.constraint.ConstraintLayout>
